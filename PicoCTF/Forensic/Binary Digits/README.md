@@ -1,18 +1,25 @@
 ## Binary Digits — picoCTF 2026
 
 Category: Forensics
+
 Difficulty: Easy
+
 Platform: picoCTF 2026
+
 Author: Yahaya Meddy
+
 Status: Solved
+
 Tools Used: Kali Linux, Linux CLI, Python 3, Pillow
 
-1. Challenge Description
+1. Challenge Description:
+
 This file doesn't look like much... just a bunch of 1s and 0s. But maybe it's not just random noise. Can you recover anything meaningful from this?
 
 The challenge provided a file named digits.bin. The objectives is to find out the hidden messages.
 
-2. Initial Investigation
+2. Initial Investigation:
+
 I started by identifying the file type using the Linux file cmd
 ```bash
 file digit.bin
@@ -46,8 +53,10 @@ grep -o '[^01]' digits.bin | sort -u
 ```
 No output was returned
 
-3. First Attempt - Binary Image Reconstruction
+3. First Attempt - Binary Image Reconstruction:
+
 Initially, i suspected that the binary file might represent black and white pixels
+
 Since the file contained 71424 characters, So i think it could be an image dimension of 248 x 288 pixels
 
 So i use python and pillow to convert the digits into grayscale pixel values:
@@ -61,7 +70,8 @@ img.save("recovered.png")
 ```
 But, the generated image contained mostly black and white noise, without any recognisable text or flag
 
-4. Second Attempt - Binary to Bytes Conversion
+4. Second Attempt - Binary to Bytes Conversion:
+
 After first attempt failed, i decided to invstigate whether the binary sigits can be converted into bytes using groups of eight bits
 
 I used python
@@ -83,7 +93,8 @@ b'\xff\xd8\xff\xe0\x00\x10JFIF'
 ```
 This gave me an inportant messages. The hexadecimal values FF D8 FF E0, followed by JFIF, indicated that the decoded bytes likely represented a JPEG image.
 
-5. Rcovering the JPEG file
+5. Rcovering the JPEG file:
+
 After identifying the JPEG file, i wrote the decoded bytes into a new .jpg file
 ```python
 with open("recovered.jpg", "wb") as f:
