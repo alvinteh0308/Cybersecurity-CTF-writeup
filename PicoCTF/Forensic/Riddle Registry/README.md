@@ -13,8 +13,8 @@ Status: Pending
 Tools Used: Kali Linux, Linux CLI, ExifTool
 
 1. Challenge Description
-Hi, intrepid investigator! 📄🔍 You've stumbled upon a peculiar PDF filled with what seems like nothing more than garbled nonsense. But beware! Not everything is as it appears. Amidst the chaos lies a hidden treasure—an elusive flag waiting to be uncovered. Find the PDF file here Hidden Confidential Document
- and uncover the flag within the metadata.
+
+Hi, intrepid investigator! 📄🔍 You've stumbled upon a peculiar PDF filled with what seems like nothing more than garbled nonsense. But beware! Not everything is as it appears. Amidst the chaos lies a hidden treasure—an elusive flag waiting to be uncovered. Find the PDF file here Hidden Confidential Document and uncover the flag within the metadata.
 
 The challenge provided a pdf file named confidential.pdf. The objectives is to find out the hidden flag.
 

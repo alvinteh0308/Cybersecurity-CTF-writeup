@@ -114,3 +114,11 @@ Throught this challenge, i learned
 3. Binary Encoding: A sequence of 0 and 1 characters can represent the individual bits of an encoded file
 4. File Signature Analysis: bytes such as FF D8 FF E0 can help identify a JPEG file
 5. Problem Solving: An unsuccessful approach can stll provide useful information and help guide the next investigation step.
+
+| File Type	| 常见 File Signature（Hex）|
+|---|---|
+| JPEG | FF D8 FF |
+| PNG | 89 50 4E 47 0D 0A 1A 0A |
+| PDF |	25 50 44 46 (%PDF) |
+| ZIP |	50 4B 03 04 |
+| GIF |	47 49 46 38 (GIF8) |
