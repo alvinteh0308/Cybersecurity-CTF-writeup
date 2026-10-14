@@ -1,13 +1,16 @@
-# Format of Writeup #
-
-Riddle Registry — picoCTF 2026
+## Riddle Registry — picoMini by CMU-Africa
 
 Category: Forensics
+
 Difficulty: Easy
+
 Platform: picoMini by CMU-Africa
+
 Author: Prince Niyonshuti N
+
 Status: Pending
-Tools Used: Kali Linux, Linux CLI, Python 3, Pillow
+
+Tools Used: Kali Linux, Linux CLI, ExifTool
 
 1. Challenge Description
 Hi, intrepid investigator! 📄🔍 You've stumbled upon a peculiar PDF filled with what seems like nothing more than garbled nonsense. But beware! Not everything is as it appears. Amidst the chaos lies a hidden treasure—an elusive flag waiting to be uncovered. Find the PDF file here Hidden Confidential Document
