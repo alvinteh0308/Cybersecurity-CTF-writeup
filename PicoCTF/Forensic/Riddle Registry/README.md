@@ -8,7 +8,7 @@ Platform: picoMini by CMU-Africa
 
 Author: Prince Niyonshuti N
 
-Status: Pending
+Status: Solved
 
 Tools Used: Kali Linux, Linux CLI, ExifTool
 
